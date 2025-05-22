@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+<body>
+    <p>At Tech.rica, we offer flexible pricing plans to suit your needs.
+        <br> Whether you're a startup, a growing business, or an enterprise, we have the perfect solution for you.
+        
+</p>
+<br>
+
+<h2>Our plans</h2>
+
+<p>1. Basic Plan - $XX/month
+✔ Ideal for individuals & small teams
+✔ [Feature 1]
+✔ [Feature 2]
+✔ [Feature 3]
+</p>
+
+<br>
+
+<p>2. Pro Plan - $XX/month
+✔ Designed for growing businesses
+✔ Includes all Basic features
+✔ [Additional Feature 1]
+✔ [Additional Feature 2]
+</p>
+
+<br>
+
+<p>3. Enterprise Plan - Custom Pricing
+✔ Tailored for large organizations
+✔ Full customization & dedicated support
+✔ [Premium Feature 1]
+✔ [Premium Feature 2]
+</p>
+
+<br>
+
+<h1>Need a custom solution?</h1>
+
+<p>Contact us for a personalized quote based on your requirements.
+Start your journey with Tech.rica today and unlock the power of your service/product!
+</p>
+
+<br>
+
+<h2>Contact Us</h2>
+    <form id="contactForm" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone (Optional):</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="inquiry">Inquiry Type:</label>
+        <select id="inquiry" name="inquiry">
+            <option value="support">Support</option>
+            <option value="sales">Sales</option>
+            <option value="partnership">Partnership</option>
+            <option value="general">General Inquiry</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <label for="file">Attach File (Max 5MB):</label>
+        <input type="file" id="file" name="file">
+
+        <label>Preferred Contact Method:</label>
+        <input type="radio" name="contact_method" value="email" checked>Email
+        <input type="radio" name="contact_method" value="phone">Phone
+
+        <label for="captcha">CAPTCHA: 2 + 3 = ?</label>
+        <input type="text" id="captcha" name="captcha" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+<script src="JAVASCRIPT/contact.js"></script>
+
+    
+</body>
+</html>
