@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: green;
+    color: white;
+    padding: 20px;
+}
+
+.contact-info, .contact-form {
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+ .navbar a:hover{
+        background-color:orangered;
+    }
+
+    .navbar li{
+        float: left;
+    }
+
+    .navbar a{
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+        color: aqua;
+        text-align: center;
+    }
+
+    .icons a{
+    text-decoration: none;
+    color: white;
+}
+
+.fa-brands.fa-facebook{
+    color:blue;
+    font-size:30px ;
+    padding-left: 14px;
+    padding-top:5px ;
+    transition: 0.3ease;
+}
+
+
+.fa-brands.fa-square-instagram{
+    color:palevioletred;
+    font-size:30px ;
+    padding-left: 14px;
+    padding-top:5px ;
+    transition: 0.3ease;
+}
+
+
+.fa-brands.fa-square-x-twitter{
+    color:black;
+    font-size:30px ;
+    padding-left: 14px;
+    padding-top:5px ;
+    transition: 0.3ease;
+}
+
+
+.fa-brands.fa-google{
+    color:#fcba03;
+    font-size:30px ;
+    padding-left: 14px;
+    padding-top:5px ;
+    transition: 0.3ease;
+}
