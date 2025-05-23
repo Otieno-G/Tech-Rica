@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #222;
+    --accent-color: #ff4500;
+    --background-light: #f8f8f8;
+    --text-light: #ffffff;
+    --font-main: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    background: var(--background-light);
+}
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(120deg, var(--primary-color), var(--accent-color));
+    text-align: center;
+    color: var(--text-light);
+    padding: 60px 20px;
+}
+
+.cta-btn {
+    background: var(--accent-color);
+    color: var(--text-light);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: var(--primary-color);
+}
+
+/* Features & Learning Sections */
+.feature-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+#learning ul {
+    list-style: none;
+    padding: 0;
+}
+
+#learning ul li {
+    padding: 8px 0;
+}
+
+#learning ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#learning ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Form Styling */
+#contact form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--accent-color);
+}
+
+footer {
+    text-align: center;
+    background: var(--secondary-color);
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    background: var(--secondary-color);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensures navbar stays above other elements */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
