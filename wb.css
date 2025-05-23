@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.trend {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+
+.read-more {
+    background: #007bff;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.more-text {
+    display: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
