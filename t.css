@@ -144,6 +144,12 @@ h1, h2, h3 {
     padding: 20px;
 }
 
+@media (max-width: 600px) {
+    .column {
+        width: 100%; /* Stack columns vertically */
+    }
+}
+
 body {
     display: flex;
     flex-direction: column;
