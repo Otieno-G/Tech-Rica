@@ -3,6 +3,9 @@ body {
     text-align: center;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -11,13 +14,13 @@ header {
     padding: 20px;
 }
 
-.about-content {
+.about-content, .container {
     padding: 20px;
     margin: 20px auto;
-    width: 60%;
+    max-width: 60%;
     background: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 ul {
@@ -32,13 +35,17 @@ ul li {
 
 .team {
     margin: 20px auto;
-    width: 70%;
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .team-member {
-    display: inline-block;
-    width: 40%;
+    flex: 1;
+    min-width: 200px;
     padding: 10px;
+    text-align: center;
 }
 
 .team-member img {
@@ -51,112 +58,42 @@ footer {
     background: #333;
     color: white;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
-.icons a{
+/* Social icons */
+.icons a {
     text-decoration: none;
     color: white;
 }
 
-.fa-brands.fa-facebook{
-    color: #fff;
-    font-size:30px ;
+.fa-brands {
+    font-size: 30px;
     padding-left: 14px;
-    padding-top:5px ;
-    transition: 0.3ease;
+    padding-top: 5px;
+    transition: ease 0.3s;
 }
 
-
-.fa-brands.fa-square-instagram{
-    color: #fff;
-    font-size:30px ;
-    padding-left: 14px;
-    padding-top:5px ;
-    transition: 0.3ease;
-}
-
-
-.fa-brands.fa-square-x-twitter{
-    color: #fff;
-    font-size:30px ;
-    padding-left: 14px;
-    padding-top:5px ;
-    transition: 0.3ease;
-}
-
-
-.fa-brands.fa-facebook:hover{
+.fa-brands:hover {
     color: #ff7200;
 }
 
-
-.fa-brands.fa-square-instagram:hover{
-    color: #ff7200;
+/* Layout with Flexbox */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-
-.fa-brands.fa-square-x-twitter:hover{
-    color: #ff7200;
+.column {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
 }
 
-/*create 4 equal columns*/
- .column{
- float: left;
- padding: 10px;
- width: 20%;
- }
- /*left and right column*/
- .column.side{
- width: 25%;
- }
- 
- /*middle column*/
- .column.middle{
- width: 50%;
- }
- 
- /*middle column*/
- .column.middle{
- width: 50%;
- }
- 
- /*clear floats after the columns*/
- .row::after{
- content:"" ;
- display: table;
- clear: both;
- }
-
- body {
-    background-color: #F4F4F4; /* Light Gray */
-    color: #333;
-}
-
-h1, h2, h3 {
-    color: #0047AB; /* Deep Blue */
-}
-
-.container {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-}
-
+/* Responsive Design */
 @media (max-width: 600px) {
     .column {
-        width: 100%; /* Stack columns vertically */
+        width: 100%;
     }
 }
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-footer {
-    margin-top: auto;
-}
- 
