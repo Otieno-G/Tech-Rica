@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future of AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .trend {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #e0e0e0;
+            border-radius: 5px;
+        }
+
+        .read-more {
+            background: #007bff;
+            color: white;
+            padding: 8px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .more-text {
+            display: none;
+            font-size: 14px;
+            margin-top: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Future of AI</h1>
+    </header>
+
+     <p class="date">Published on May 5, 2025</p>
+        <img src="/images/web tr" alt="Backend Development">
+        <p>Backend development refers to the server-side of web applications, handling databases, APIs, and business logic to ensure smooth functionality. It involves managing data, processing requests, and ensuring security. Due to its influence in Web development,Mobile application,enterprise systems and other areas in tech industry , it has become an area of concern in the tech world.Backend development involve the following languages :Node.js, Python (Django/Flask), Java (Spring Boot), PHP (Laravel), and Ruby (Rails)Despite the many languages ,two languages have drawn interest and brought differences among many people .Is it Java or Python?
+            Click Read More to discover more on the future of backend development.
+        </p>
+    <main>
+        <section class="trend">
+            <h2>AI in Everyday Life</h2>
+            <p>AI is becoming more integrated into daily activities, from smart assistants to healthcare diagnostics.</p>
+            <button class="read-more">Read More</button>
+            <p class="more-text">AI-powered tools will enhance productivity, communication, and personalized experiences.</p>
+        </section>
+
+        <section class="trend">
+            <h2>AI and Automation</h2>
+            <p>AI-driven automation will streamline industries, reducing manual tasks and improving efficiency.</p>
+            <button class="read-more">Read More</button>
+            <p class="more-text">Sectors like manufacturing, finance, and customer service will see increased AI adoption.</p>
+        </section>
+
+        <section class="trend">
+            <h2>AI in Healthcare</h2>
+            <p>AI is revolutionizing healthcare with predictive analytics and robotic surgeries.</p>
+            <button class="read-more">Read More</button>
+            <p class="more-text">Future advancements will improve diagnostics and treatment precision.</p>
+        </section>
+
+          <section class="trend">
+            <h2>AI in Everyday Life</h2>
+            <p>AI is becoming more integrated into daily activities, from smart assistants to healthcare diagnostics.</p>
+            <button class="read-more">Read More</button>
+            <p class="more-text">AI-powered tools will enhance productivity, communication, and personalized experiences.</p>
+        </section>
+
+        <section class="trend">
+            <h2>AI and Automation</h2>
+            <p>AI-driven automation will streamline industries, reducing manual tasks and improving efficiency.</p>
+            <button class="read-more">Read More</button>
+            <p class="more-text">Sectors like manufacturing, finance, and customer service will see increased AI adoption.</p>
+        </section>
+
+        <section class="trend">
+            <h2>AI in Healthcare</h2>
+            <p>AI is revolutionizing healthcare with predictive analytics and robotic surgeries.</p>
+            <button class="read-more">Read More</button>
+            <p class="more-text">Future advancements will improve diagnostics and treatment precision.</p>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', () => {
+                const moreText = button.nextElementSibling;
+                moreText.style.display = (moreText.style.display === "none" || !moreText.style.display) ? "block" : "none";
+                setTimeout(() => {
+                    moreText.style.opacity = (moreText.style.display === "block") ? "1" : "0";
+                }, 50);
+            });
+        });
+    </script>
+</body>
+</html>
