@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Rica: Costa Rica’s Influence in Tech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .trend {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .read-more {
+            background: #007bff;
+            color: white;
+            padding: 8px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .more-text {
+            display: none;
+            font-size: 14px;
+            margin-top: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tech Rica: Costa Rica’s Influence in the Tech Industry</h1>
+    </header>
+    <main>
+        <section class="trend">
+            <h2>Growth of the Tech Sector</h2>
+            <p>Costa Rica has invested heavily in technology education and infrastructure.</p>
+            <button class="read-more">Read More</button>
+            <p class="more-text">The country exports over $3.3 billion in technology services annually and leads innovation in Latin America.</p>
+        </section>
+
+        <section class="trend">
+            <h2>Global Tech Companies in Costa Rica</h2>
+            <p>Major tech firms have established operations in Costa Rica, including Intel, IBM, and Amazon.</p>
+            <button class="read-more">Read More</button>
+            <p class="more-text">Costa Rica is home to research and development centers focused on AI, cloud computing, and cybersecurity.</p>
+        </section>
+
+        <section class="trend">
+            <h2>Tech Education & Workforce Development</h2>
+            <p>Costa Rica produces thousands of STEM graduates annually.</p>
+            <button class="read-more">Read More</button>
+            <p class="more-text">The country has a diverse and skilled workforce, with 37% of STEM graduates being women.</p>
+        </section>
+
+           <section class="trend">
+            <h2>Growth of the Tech Sector</h2>
+            <p>Costa Rica has invested heavily in technology education and infrastructure.</p>
+            <button class="read-more">Read More</button>
+            <p class="more-text">The country exports over $3.3 billion in technology services annually and leads innovation in Latin America.</p>
+        </section>
+
+        <section class="trend">
+            <h2>Global Tech Companies in Costa Rica</h2>
+            <p>Major tech firms have established operations in Costa Rica, including Intel, IBM, and Amazon.</p>
+            <button class="read-more">Read More</button>
+            <p class="more-text">Costa Rica is home to research and development centers focused on AI, cloud computing, and cybersecurity.</p>
+        </section>
+
+        <section class="trend">
+            <h2>Tech Education & Workforce Development</h2>
+            <p>Costa Rica produces thousands of STEM graduates annually.</p>
+            <button class="read-more">Read More</button>
+            <p class="more-text">The country has a diverse and skilled workforce, with 37% of STEM graduates being women.</p>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', () => {
+                const moreText = button.nextElementSibling;
+                moreText.style.display = (moreText.style.display === "none" || !moreText.style.display) ? "block" : "none";
+                setTimeout(() => {
+                    moreText.style.opacity = (moreText.style.display === "block") ? "1" : "0";
+                }, 50);
+            });
+        });
+    </script>
+</body>
+</html>
